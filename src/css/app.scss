@@ -17,6 +17,7 @@ body {
   color: $text-primary;
   font-size: 18px;
   line-height: 1.8rem;
+  background-color: $primary;
 }
 
 @mixin fluid-font-size(

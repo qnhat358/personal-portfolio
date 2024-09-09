@@ -12,7 +12,6 @@ const myIcons = {
 };
 
 const $q = useQuasar();
-document.body.style.overflow = 'hidden';
 
 $q.iconMapFn = (iconName) => {
   const icon = myIcons[iconName];
