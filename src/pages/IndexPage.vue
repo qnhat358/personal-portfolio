@@ -1,10 +1,13 @@
 <template>
-  <q-page> Hello world </q-page>
+  <q-page>
+    <IndexSection />
+  </q-page>
 </template>
 
 <script setup>
 import { useMeta } from 'quasar';
 import { useI18n } from 'vue-i18n';
+import IndexSection from 'src/components/IndexSection.vue';
 
 const { t } = useI18n();
 
