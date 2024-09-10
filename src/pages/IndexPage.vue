@@ -1,12 +1,14 @@
 <template>
   <q-page>
     <IndexSection />
+    <AboutSection />
   </q-page>
 </template>
 
 <script setup>
 import { useMeta } from 'quasar';
 import { useI18n } from 'vue-i18n';
+import AboutSection from 'src/components/AboutSection.vue';
 import IndexSection from 'src/components/IndexSection.vue';
 
 const { t } = useI18n();
