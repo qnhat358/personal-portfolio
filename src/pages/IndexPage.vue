@@ -1,8 +1,8 @@
 <template>
   <q-page>
-    <IndexSection />
-    <AboutSection />
-    <ExperienceSection />
+    <IndexSection id="index" />
+    <AboutSection id="about" />
+    <ExperienceSection id="experience" />
   </q-page>
 </template>
 
