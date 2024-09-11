@@ -10,14 +10,22 @@
           I am a creative software developer <br />
           With a strong focus on motion and interaction.
         </p>
-        <p class="q-mb-none">Contact me</p>
+        <div class="row justify-end">
+          <AnimatedNotion type="box" :padding="5">
+            <q-btn class="q-mb-none" @click="scrollTo('contact')"
+              >Contact me</q-btn
+            >
+          </AnimatedNotion>
+        </div>
       </div>
     </div>
-    <div class="glow"></div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { scrollTo } from 'src/utils/scroll.util';
+import AnimatedNotion from './AnimatedNotion.vue';
+</script>
 
 <style lang="scss" scoped>
 .padding-container {

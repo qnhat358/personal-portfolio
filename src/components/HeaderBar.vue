@@ -23,19 +23,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+import { scrollTo } from 'src/utils/scroll.util';
 
 const isEnableColorNavbar = ref(false);
 const tab = ref('home');
-
-const scrollTo = (sectionId) => {
-  const sectionContainer = document.getElementById(sectionId);
-  if (sectionContainer) {
-    window.scrollTo({
-      top: sectionContainer.offsetTop,
-      behavior: 'smooth'
-    });
-  }
-};
 
 const handleScroll = (event) => {
   isEnableColorNavbar.value = window.scrollY >= 80;

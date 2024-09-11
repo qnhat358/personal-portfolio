@@ -1,7 +1,9 @@
 <template>
   <div class="padding-container">
+    <AnimatedNotion>
+      <p class="fontsize-23 q-mb-xl">Work Experience</p>
+    </AnimatedNotion>
     <q-timeline color="secondary" layout="comfortable">
-      <q-timeline-entry heading> Work Experience </q-timeline-entry>
       <q-timeline-entry
         title="Intern Fullstack Developer"
         subtitle="June 2022 - August 2022"
@@ -55,20 +57,35 @@
           </li>
           <li>Developed and maintained internal website for company.</li>
           <li>Write unit test for frontend and backend.</li>
+          <li>
+            Implementing responsive design and ensuring cross-browser
+            compatibility.
+          </li>
+          <li>Analyze and optimize codes and flows.</li>
         </ul>
       </q-timeline-entry>
     </q-timeline>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import AnimatedNotion from './AnimatedNotion.vue';
+</script>
 
 <style lang="scss" scoped>
 :deep(.q-timeline__dot) {
   width: 45px;
 }
 
-:deep(.q-timeline__dot-img),
+:deep(.q-timeline__dot-img) {
+  width: 31px;
+  height: 31px;
+  left: 7px;
+  top: 12px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 :deep(.q-timeline__dot:before) {
   width: 45px;
   height: 45px;

@@ -1,6 +1,8 @@
 <template>
   <div class="padding-container column justify-center">
-    <p class="fontsize-23 q-mb-xl">I'm a Software Engineer.</p>
+    <div style="width: fit-content" class="q-mb-xl fontsize-23">
+      <p class="typewriter">I'm a Software Engineer.</p>
+    </div>
     <p>
       A passionate frontend developer based in Da Nang with a love for creating
       clean, scalable web solutions. With hands-on experience in Vue.js, Quasar
@@ -59,6 +61,10 @@
     background-color: $primary-lighter !important;
     height: 44px;
     width: 44px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
   }
 }
 </style>
