@@ -6,7 +6,11 @@
     }"
   >
     <q-toolbar class="q-mx-sm q-px-none full-width row">
-      <q-btn flat label="Home" />
+      <q-btn
+        flat
+        label="Nhat | Software Developer"
+        @click="scrollTo('index')"
+      />
       <q-space />
       <q-tabs v-model="tab" shrink>
         <q-tab name="about" label="About" @click="scrollTo('about')" />
@@ -52,7 +56,7 @@ onUnmounted(() => {
 }
 
 .colored {
-  background-color: $secondary;
+  background-color: $primary;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
