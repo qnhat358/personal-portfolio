@@ -53,15 +53,14 @@ import AnimatedNotion from './AnimatedNotion.vue';
 a {
   text-decoration: none;
   color: inherit;
-
-  &:hover i {
-    opacity: 0.7;
-    transition: all 0.2s;
-  }
 }
 
 .icon {
   font-size: 26px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
 }
 
 p {

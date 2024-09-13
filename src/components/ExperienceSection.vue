@@ -77,6 +77,10 @@ import AnimatedNotion from './AnimatedNotion.vue';
   width: 45px;
 }
 
+:deep(.q-timeline__entry) {
+  line-height: 1.8rem;
+}
+
 :deep(.q-timeline__dot-img) {
   width: 31px;
   height: 31px;
