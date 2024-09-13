@@ -1,7 +1,14 @@
 <template>
   <div class="padding-container column justify-center">
-    <div style="width: fit-content" class="q-mb-xl fontsize-23">
-      <p class="typewriter">I'm a Software Engineer.</p>
+    <div
+      v-intersection="intersectionHandler"
+      style="width: fit-content"
+      class="fontsize-23"
+    >
+      <p class="q-mb-xl typewriter" v-if="isShowTypewriter">
+        I'm a Software Engineer.
+      </p>
+      <p class="q-mb-xl typewriter" v-else>&nbsp;</p>
     </div>
     <p>
       A passionate frontend developer based in Da Nang with a love for creating
@@ -53,7 +60,14 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+const isShowTypewriter = ref(false);
+
+const intersectionHandler = (entry) => {
+  isShowTypewriter.value = entry.isIntersecting;
+};
+</script>
 
 <style lang="scss" scoped>
 .skills {
