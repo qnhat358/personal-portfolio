@@ -12,7 +12,7 @@
         @click="scrollTo('index')"
       />
       <q-space />
-      <q-tabs v-model="tab" shrink>
+      <q-tabs v-model="tab" shrink v-if="$q.screen.gt.xs">
         <q-tab name="about" label="About" @click="scrollTo('about')" />
         <q-tab name="work" label="Work" @click="scrollTo('experience')" />
         <q-tab name="contact" label="Contact" @click="scrollTo('contact')" />
@@ -24,6 +24,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import { scrollTo } from 'src/utils/scroll.util';
+
+import { useQuasar } from 'quasar';
+const $q = useQuasar();
 
 const isEnableColorNavbar = ref(false);
 const tab = ref('home');

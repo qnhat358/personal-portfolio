@@ -10,7 +10,7 @@
       </p>
       <p class="q-mb-xl typewriter" v-else>&nbsp;</p>
     </div>
-    <p>
+    <p style="text-align: justify">
       A passionate frontend developer based in Da Nang with a love for creating
       clean, scalable web solutions. With hands-on experience in Vue.js, Quasar
       Framework, and enterprise management systems, I focus on delivering fast

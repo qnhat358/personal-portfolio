@@ -3,13 +3,15 @@
     <AnimatedNotion>
       <p class="fontsize-23">Contact</p>
     </AnimatedNotion>
-    <p>
+    <p style="text-align: justify">
       I'm currently looking to join a cross-functional team that values
       improving people's lives through accessible design. Or have a project in
       mind? Let's connect.
     </p>
-    <p class="text-bold">quangnhat358@gmail.com</p>
-    <p class="row q-gutter-x-lg">
+    <span class="text-bold q-mb-md self-center self-md-start"
+      >quangnhat358@gmail.com</span
+    >
+    <p class="row q-gutter-x-lg self-center self-md-start">
       <a
         title="Linkedin"
         href="https://www.linkedin.com/in/quangnhat358/"

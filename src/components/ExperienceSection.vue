@@ -3,7 +3,10 @@
     <AnimatedNotion>
       <p class="fontsize-23 q-mb-xl">Work Experience</p>
     </AnimatedNotion>
-    <q-timeline color="secondary" layout="comfortable">
+    <q-timeline
+      color="secondary"
+      :layout="$q.screen.gt.sm ? 'comfortable' : 'dense'"
+    >
       <q-timeline-entry
         title="Intern Fullstack Developer"
         subtitle="June 2022 - August 2022"
@@ -79,6 +82,10 @@ import AnimatedNotion from './AnimatedNotion.vue';
 
 :deep(.q-timeline__entry) {
   line-height: 1.8rem;
+}
+
+:deep(.q-timeline__entry--right) {
+  padding-left: 54px;
 }
 
 :deep(.q-timeline__dot-img) {

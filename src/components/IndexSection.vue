@@ -1,10 +1,13 @@
 <template>
   <div class="flex flex-center padding-container">
-    <div class="row">
+    <div class="column row-md items-center q-gutter-xl">
       <div class="avatar-container">
         <q-img src="~assets/avatar.png" width="200px" fit="contain" />
       </div>
-      <div class="column justify-center q-ml-xl">
+      <div
+        class="column items-center items-md-start justify-center"
+        :class="{ 'text-center': $q.screen.lt.md }"
+      >
         <p>Hello! I am <span class="text-secondary">Nhat</span></p>
         <p>
           I am a creative software developer <br />
