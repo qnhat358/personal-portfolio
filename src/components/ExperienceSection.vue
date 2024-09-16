@@ -53,7 +53,7 @@
         <ul class="fontsize-8">
           <li>
             Developed and maintained multi-platform enterprise management system
-            using Vuejs and .Net
+            using Vuejs and dotNET.
           </li>
           <li>
             Join in developing two company websites using Vue.js and Firebase.
