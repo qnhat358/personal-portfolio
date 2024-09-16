@@ -1,7 +1,7 @@
 {
-  "name": "base-quasar-project",
+  "name": "personal-portfolio-project",
   "version": "0.0.1",
-  "description": "",
+  "description": "This is my personal portfolio project using Quasar.",
   "productName": "",
   "author": "nhat.tran-duy-quang <quangnhat358@gmail.com>",
   "private": true,
